@@ -1,3 +1,12 @@
+// Push to Start
+// Load - Q1   
+    //set timer :30sec
+    // load Chocie 1-4
+// logic - win/lose
+    //track
+// load next Q
+
+
 // PsudeoCode
 // declare variables 
     // Timer

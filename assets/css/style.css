@@ -19,7 +19,12 @@
     padding: 90px 0;
 
 }
+
+img {
+    width: 30%;
+}
+
 body {
     background-image: url("../images/tavern.jpg");
-    background-size: 100%
+    background-size: 100%;
 }
