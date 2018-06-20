@@ -9,7 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Righteous" rel="stylesheet">
 
 </head>
   <body>
@@ -21,22 +22,22 @@
 					<div class="col-sm-12 title center"> <img src="assets/images/dndlogo.png" alt="DND Logo">Trivia </div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 timer center">Timer</div>
+					<div class="col-sm-12 center" id="timer"></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 center question">Question</div>
+					<div class="col-sm-12  center" id="question"></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 center choiceOne">Choice 1</div>			
+					<div class="col-sm-12 answer center" id= "choiceOne">Click to start game</div>			
 				</div>
 				<div class="row">
-					<div class="col-sm-12 center choiceTwo">Choice 2</div>
+					<div class="col-sm-12 answer center" id= "choiceTwo"></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 center choiceThree">Choice 3</div>
+					<div class="col-sm-12 answer center" id= "choiceThree"></div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 center choiceFour">Choice 4</div>
+					<div class="col-sm-12  answer center" id= "choiceFour"></div>
 				</div>
 			</div>
 			<div class="col-sm-3"> </div>
@@ -44,7 +45,7 @@
 	</div>
    
     <!-- Optional JavaScript -->
-    <script src="assets/javascript/game.js"> </script>
+		<script type="text/javascript" src="assets/javascript/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
