@@ -75,6 +75,7 @@ var game = {
 		else
 		{
 			$("#question").html('All done, here\'s how you did!<br><h3>Correct Answers: ' + game.correctAnswers+ '<br>Incorrect Answers: '+ game.incorrectAnswers +'<br>Unanswered: ' + game.unanswered + '</h3>');
+            $("#choiceOne").show();
             $("#choiceOne").text("Start Over?");
             // need to find a way to remove div, empty div still shows :hover property
             $("#timer, #choiceTwo, #choiceThree, #choiceFour").hide();
