@@ -143,7 +143,7 @@ var game = {
 		$("#timer").text("Time Remaining: " + timer + " seconds");
 		if (timer == 0)
 		 {
-		 	game.selectedAnswer = "";
+		 	selectedAnswer = "";
 		 	reveal();
 		 }
     };
