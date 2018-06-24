@@ -1,6 +1,6 @@
 window.onload = function(){
 	$(".answer").on("click", function(){
-		game.selectedAnswer = $(this).text();
+		selectedAnswer = $(this).text();
 		reveal();
 	});
 };
@@ -158,23 +158,23 @@ var game = {
 		if(state > 0)
 		{
             // if object - correctanswerindex matches users choice ++
-			if(game.questions[state].answers[game.questions[state].correctAnswerIndex] == game.selectedAnswer )
+			if(game.questions[state].answers[game.questions[state].correctAnswerIndex] == selectedAnswer )
 			{
-				game.correctAnswers++;
+				correctAnswers++;
                 $("#question").html('Correct!<br><br><br><img src="'+ game.questions[state].gifImage +'">');
                 $("#timer, #choiceOne, #choiceTwo, #choiceThree, #choiceFour").hide();
             }
             // if unanswered
-			else if(game.selectedAnswer == "")
+			else if(selectedAnswer == "")
 			{
-				game.unanswered++;
+				unanswered++;
 				$("#question").html('Out of Time!<br><br><h3>The correct answer was: ' + game.questions[state].answers[game.questions[state].correctAnswerIndex] +'</h3><br><img src="'+ game.questions[state].gifImage +'">');
                 $("#timer, #choiceOne, #choiceTwo, #choiceThree, #choiceFour").hide();		
             }
             // if object - correctanswerindex does not match users choice, show correct answer
 			else
 			{
-				game.incorrectAnswers++;
+				incorrectAnswers++;
 				$("#question").html('Nope!<br><br><h3>The correct answer was: ' + game.questions[state].answers[game.questions[state].correctAnswerIndex]+'</h3><br><img src="'+ game.questions[state].gifImage +'">');
                 $("#timer, #choiceOne, #choiceTwo, #choiceThree, #choiceFour").hide();		
             }
